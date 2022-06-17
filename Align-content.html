@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Content </title>
+    
+    <style>
+        .container{
+            border: 1px solid black;
+            max-width: 300px;
+            height: 350px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            flex: 1;
+            margin: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .flex-start{
+            align-items: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+    </style>
+
+</head>
+<body>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">sadas dassada sdasdsa dsad</div>
+        <div class="item">sadasdas dasds adasdsad</div>
+        <div class="item">asdasd asdasd</div>
+        <div class="item">asdsadddd dddddd dddddddd</div>
+        <div class="item">dsssssss sssssss</div>
+        <div class="item">sssssssssssssss sssssssssss sssssssssssss</div>
+        <div class="item">asda sdasd</div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">sadas dassadasd asdsadsad</div>
+        <div class="item">sadas dasdasdsa dasdsad</div>
+        <div class="item">asdas dasdasd</div>
+        <div class="item">asdsa ddddddddd ddddddddd</div>
+        <div class="item">dsssss sssssssss</div>
+        <div class="item">ssssssss ssssssssssss ssssssss ssssssss</div>
+        <div class="item">asdas dasd</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">sadas dassadasdasd sadsad</div>
+        <div class="item">sadasdas dasdsadasdsad</div>
+        <div class="item">asdasd asdasd</div>
+        <div class="item">asdsa dddddd ddddd ddddddd</div>
+        <div class="item">dsssssss sssssss</div>
+        <div class="item">sssss sssss sssss ssss ssssssss sssssssss</div>
+        <div class="item">asdas dasd</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">sadas dassadasdasd sadsad</div>
+        <div class="item">sadasdas dasdsadasdsad</div>
+        <div class="item">asdasd asdasd</div>
+        <div class="item">asdsa dddddd ddddd ddddddd</div>
+        <div class="item">dsssssss sssssss</div>
+        <div class="item">sssss sssss sssss ssss ssssssss sssssssss</div>
+        <div class="item">asdas dasd</div>
+    </div>
+</body>
+</html>
